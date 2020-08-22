@@ -148,7 +148,7 @@ var MonChart = (function () {
         var date = new Date();
         var createdDate = date.getDate() + "/" + (date.getMonth() + 1) + "/" + date.getFullYear();
         ctx.font = "8px Arial";
-        ctx.fillText("Created with MonChart (https://jordanbird.github.io/monchart) on " + createdDate + ".", margin, graphicHeight - 22);
+        ctx.fillText("Created with MonChart (https://jordanbird.github.io/MonChart) on " + createdDate + ".", margin, graphicHeight - 22);
         ctx.fillText("MonChart created by Jordan Bird (jordanbird.co.uk).", margin, graphicHeight - 12);
 
         for (var i = 0; i < currentPokemon.length; i++) {
