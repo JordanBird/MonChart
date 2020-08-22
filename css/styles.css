@@ -1,0 +1,48 @@
+body {
+    background-color: #1d1d1d;
+}
+
+.card,
+.footer,
+.dropdown-menu,
+.navbar {
+    background-color: #272626;
+}
+
+.dropdown-menu {
+    padding: 0;
+}
+
+.card-header {
+    background-color: rgb(255 255 255 / 3%);
+}
+
+a,
+div,
+span,
+p,
+label,
+h1 {
+    color: #6c757d;
+}
+
+a:hover {
+    color:white;
+    text-decoration: none;
+}
+
+.form-control,
+.form-control:focus {
+    background-color: #2e2d2d;
+    border: 1px solid #1f1f1f;
+}
+
+.form-control:focus {
+    border-color: white;
+    box-shadow: none;
+}
+
+.custom-control-label:before {
+    background-color: #2e2d2d;
+    border: #1f1f1f solid 1px;
+}
