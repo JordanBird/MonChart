@@ -8,6 +8,8 @@ function main() {
   MonChart.init(null, onPokemonChangedCallback);
 
   MonChart.render(options);
+
+  GitHubPages.normaliseUrls();
 }
 
 function init() {
