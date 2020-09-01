@@ -7,7 +7,7 @@ var GitHubPages = (function () {
 
         $('a').each(function () {
             if ($(this).attr('href').startsWith('/')) {
-                $(this).attr('href', window.location.origin + $(this).attr('href'));
+                $(this).attr('href', window.location.origin + window.location.pathname + $(this).attr('href').replace(/^\/|\/$/g, ''));
             }
         });
     }
