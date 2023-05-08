@@ -84,7 +84,7 @@ function getDefaultOptions() {
     borderWidth: 2,
     borderColor: "#000000",
 
-    spriteSourceURL: "https://img.pokemondb.net/sprites/home/normal/[SLUG].png",
+    spriteSourceURL: "https://img.pokemondb.net/sprites/[SOURCE]/normal/[SLUG].png",
 
     showKey: false,
     keys: [

@@ -253,7 +253,8 @@ var MonChart = (function () {
             cachedPokemon.push({
                 name: pokemon[i].name,
                 slug: pokemon[i].slug,
-                number: pokemon[i].number
+                number: pokemon[i].number,
+                source: pokemon[i].source,
             });
         }
     }
@@ -283,7 +284,12 @@ var MonChart = (function () {
             url = url.replace("normal", "shiny");
         }
 
-        return url.replace("[NAME]", pokemon.name).replace("[NUMBER]", pokemon.number).replace("[SLUG]", pokemon.slug);
+        var source = "home";
+        if (pokemon.source) {
+            source = pokemon.source;
+        }
+
+        return url.replace("[NAME]", pokemon.name).replace("[NUMBER]", pokemon.number).replace("[SLUG]", pokemon.slug).replace("[SOURCE]", source);
     }
 
     function transparentPresent() {
