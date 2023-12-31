@@ -86,6 +86,7 @@ function getDefaultOptions() {
 
     spriteSourceURL: "https://img.pokemondb.net/sprites/[SOURCE]/normal/[SLUG].png",
 
+    shiny: false,
     showKey: false,
     keys: [
       { name: "Green", color: "#008000" },
@@ -200,7 +201,9 @@ function convertOptionsToParams() {
 
     s: options.spriteSourceURL,
 
+    sh: options.shiny,
     hk: options.showKey,
+
     k: options.keys,
     kr: options.keysPerRow,
     ks: options.keySize,
@@ -227,6 +230,7 @@ function convertParamsToOptions(querystringOptions) {
 
   options.spriteSourceURL = querystringOptions.s;
 
+  options.shiny = querystringOptions.sh;
   options.showKey = querystringOptions.hk;
   options.keys = querystringOptions.k;
   options.keysPerRow = querystringOptions.kr;

@@ -280,7 +280,7 @@ var MonChart = (function () {
     function getImageURL(pokemon) {
         var url = options.spriteSourceURL;
 
-        if (Math.floor(Math.random() * 4096) == 0) {
+        if (options.shiny) {
             url = url.replace("normal", "shiny");
         }
 
